@@ -53,6 +53,7 @@ const FeatureTab = (
 
   const maskImage = useMotionTemplate`radial-gradient(80px 80px at ${xPrecentage}% ${yPrecentage}%, black, transparent)`;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!tabRef.current || !props.selected) return;
 
@@ -78,7 +79,7 @@ const FeatureTab = (
     };
     animate(xPrecentage, [0, 100, 100, 0, 0], options);
     animate(yPrecentage, [0, 0, 100, 100, 0], options);
-  }, [xPrecentage, yPrecentage]);
+  }, [props.selected, xPrecentage, yPrecentage]);
 
   const handleTabHover = () => {
     if (dotLottieRef.current === null) return;

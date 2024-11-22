@@ -49,7 +49,7 @@ export const Testimonials = () => {
           Beyound Expectations
         </h2>
         <p className="text-white/70 text-lg md:text-xl text-center mt-5 tracking-tight max-w-sm mx-auto">
-          Our revolutionary AI SEO tools have transformed our clients'
+          Our revolutionary AI SEO tools have transformed our clients`&apos;`
           stratergies
         </p>
 

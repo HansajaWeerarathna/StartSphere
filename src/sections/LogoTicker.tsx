@@ -7,7 +7,7 @@ import quantumLogo from "@/assets/logo-quantum.png";
 import pulseLogo from "@/assets/logo-pulse.png";
 import echoLogo from "@/assets/logo-echo.png";
 import { motion } from "framer-motion";
-import Image from 'next/image';
+import Image from "next/image";
 
 export const LogoTicker = () => {
   return (
@@ -42,7 +42,14 @@ export const LogoTicker = () => {
                 quantumLogo,
                 echoLogo,
               ].map((logo) => (
-                <Image src={logo.src} key={logo.src} alt="Description of the image" className="h-6 w-auto" />
+                <Image
+                  src={logo.src}
+                  key={logo.src}
+                  alt="Description of the image"
+                  className="object-contain"
+                  width={84}
+                  height={84}
+                />
               ))}
             </motion.div>
           </div>
